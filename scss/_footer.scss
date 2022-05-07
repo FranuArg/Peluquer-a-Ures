@@ -1,0 +1,30 @@
+/* COMIENZA FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: $colornegro;
+}
+
+.footer_texto {
+    color: $colorfuenteblanco;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+#footer_historia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colornegro;
+}
+
+.footer_contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $colornegro;
+}

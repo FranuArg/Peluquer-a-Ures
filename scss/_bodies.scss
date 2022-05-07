@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-color: rgba(231, 229, 229, 0.8);
+}
+/* COMIENZA BODY INDEX */
+.cuerpo {
+    position: relative;
+    min-height: 80vh;
+}
+
+.cuerpo::before {
+    content: "«";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../images/Salon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+    opacity: 0.25;
+}
+
+.reserva {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+}
+
+#reserva_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-style: italic;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja_redes_whatsapp {
+    margin-left: 50px;
+    margin-right: 40px;
+    padding-left: 30px;
+    transition: all 0.5s ease-in;
+}
+
+.caja_redes_instagram {
+    margin-left: 1px;
+    margin-right: 1px;
+    transition: all 0.5s ease-in;
+}
+
+.fa-brands {
+    color: $colornegro;
+}
+
+.caja_redes_facebook {
+    margin-left: 40px;
+    margin-right: 50px;
+    padding-right: 30px;
+    transition: all 0.2s ease-in;
+}
+
+.caja_redes_facebook:hover {
+    transform: scale(1.2);
+}
+
+.caja_redes_whatsapp:hover {
+    transform: scale(1.2);
+}
+
+.caja_redes_instagram:hover {
+    transform: scale(1.2);
+}
+
+#telefono_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    margin-top: 4.2%;
+}
+#telefono_index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+/* TERMINA BODY INDEX */
+
+/* COMIENZA BODY SERVICIOS */
+
+
+.grilla_servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 5%);
+    min-height: 50vh;
+    position: relative;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.grilla_servicios::before {
+    content: "«";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../images/Salon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+    opacity: 0.25;
+}
+
+#servtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-style: italic;
+    margin-top: 60px;
+}
+#servtabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* TERMINA BODY SERVICIOS */
+
+/* COMIENZA BODY GALERIA */
+
+.main_galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 5%);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 80vh;
+}
+
+.main_galeria::before {
+    content: "«";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../images/Salon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+    opacity: 0.25;
+}
+
+.titulo_galeria {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-size: x-large;
+    font-style: italic;
+    margin-top: 60px;
+}
+.imggaleria {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    justify-self: center;
+    align-self: center;
+    transition: all 0.5s ease-in;
+}
+
+.imggaleria:hover {
+    transform: scale(1.05);
+  }
+/* TERMINA BODY GALERIA */
+
+/* COMIENZA BODY HISTORIA */
+
+.main_historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 5%);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 80vh;
+}
+
+.main_historia::before {
+    content: "«";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../images/Salon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+    opacity: 0.25;
+}
+
+.titulo_historia {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-top: 80px;
+}
+.texto_historia {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+/* TERMINA BODY HISTORIA */
+
+/* COMIENZA BODY CONTACTO */
+
+.main_contacto {
+        position: relative;
+        min-height: 80vh;
+    }
+    
+.main_contacto::before {
+        content: "«";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: url("../images/Salon.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -5;
+        opacity: 0.25;
+    }
+
+.contactenos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 5%);
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+.titulo_contactenos {
+    font-size: x-large;
+    font-style: italic;
+    justify-self: center;
+    align-self: center;
+    margin-top: 50px;
+}
+
+#caja_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 5%);
+    justify-items: center;
+    align-items: center;
+}
+
+#textarea {
+    border: 1px solid black;
+    width: 25rem;
+    height: 6rem;
+    padding: 0.1rem;
+    margin: 0px 0px 5px 0px;
+    resize: none;
+}
+/* TERMINA BODY CONTACTO */
