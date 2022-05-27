@@ -105,7 +105,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  opacity: 0.75;
+  opacity: 0.50;
   background-color: rgba(231, 229, 229, 0.8); }
 
 .reserva {
@@ -193,7 +193,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  opacity: 0.75; }
+  opacity: 0.50; }
 
 .tituloservicios {
   text-align: center;
@@ -285,7 +285,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  opacity: 0.75; }
+  opacity: 0.50; }
 
 .titulo_galeria {
   display: flex;
@@ -333,7 +333,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  opacity: 0.75; }
+  opacity: 0.50; }
 
 .titulo_historia {
   display: flex;
@@ -379,7 +379,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  opacity: 0.75; }
+  opacity: 0.50; }
 
 .contactenos {
   display: grid;
@@ -490,7 +490,7 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -5;
-    opacity: 0.75; }
+    opacity: 0.50; }
   .reserva {
     display: grid;
     grid-template-columns: 1fr;
