@@ -1,7 +1,9 @@
 body {
     margin: 0;
     height: 100%;
-    background-color: rgba(231, 229, 229, 0.8);
+    background-color: $colornegro;
+    width: 100%;
+    height: 100%;
 }
 /* COMIENZA BODY INDEX */
 .cuerpo {
@@ -21,7 +23,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -5;
-    opacity: 0.25;
+    opacity: 0.75;
+    background-color: rgba(231, 229, 229, 0.8);
 }
 
 .reserva {
@@ -36,7 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: xx-large;
-    font-style: italic;
+    color: $colorfuenteblanco;
 }
 .redes {
     display: flex;
@@ -57,7 +60,7 @@ body {
 }
 
 .fa-brands {
-    color: $colornegro;
+    color: $colorfuenteblanco;
 }
 
 .caja_redes_facebook {
@@ -85,12 +88,14 @@ body {
     align-items: center;
     font-size: xx-large;
     margin-top: 4.2%;
+    color: $colorfuenteblanco;
 }
 #telefono_index {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: xx-large;
+    color: $colorfuenteblanco;
 }
 /* TERMINA BODY INDEX */
 
@@ -119,22 +124,75 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -5;
-    opacity: 0.25;
+    opacity: 0.75;
 }
 
-#servtitulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
-    font-style: italic;
-    margin-top: 60px;
-}
+.tituloservicios{
+    text-align: center;
+    color: $colorfuenteblanco;
+    margin-top: 100px;
+    font-size: 180%;
+  }
+  
 #servtabla {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $colorfuenteblanco;
 }
+li{
+    color: #2c3e50;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    color: $colorfuenteblanco;
+  }
+  .listatitulo {
+    list-style-type: none;
+    font-size: larger;
+    font-weight: bold;
+    color: $colorfuenteblanco;
+  }
+  /*SG = style grid*/
+  .SG{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .SG .sgLi{
+    min-width: 24%;
+    margin: 2% .35%;
+    display: inline-flex;
+    box-shadow: 0 2px 4px rgba(0,0,0, .2);
+  }
+  .SG .sgLi:hover{
+    box-shadow:0 5px 10px rgba(0,0,0,.15);}
+  .SG .box{
+    width: 100%;
+    height: 100vh;
+    padding: 1% 2%;
+    background: $colornegro;
+    min-height: 200px;
+    max-height: 220px;
+    box-sizing: border-box;
+  }
+  .s18 li:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    display: inline-block;
+    background: url(//goo.gl/lcPSVD);
+    background-position: 50%;
+  }
+  .s19{list-style: none;}
+  .s19 li:before{
+    content: '\f0a9';
+    margin-right: 15px;
+  }
+
 /* TERMINA BODY SERVICIOS */
 
 /* COMIENZA BODY GALERIA */
@@ -161,7 +219,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -5;
-    opacity: 0.25;
+    opacity: 0.75;
 }
 
 .titulo_galeria {
@@ -169,15 +227,20 @@ body {
     justify-self: center;
     align-self: center;
     font-size: x-large;
-    font-style: italic;
     margin-top: 60px;
+    color: $colorfuenteblanco;
+    font-size: 180%;
 }
+.imagenes_galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .imggaleria {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 25%;
+    max-height: 25%;
     object-fit: cover;
-    justify-self: center;
-    align-self: center;
     transition: all 0.5s ease-in;
 }
 
@@ -210,7 +273,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -5;
-    opacity: 0.25;
+    opacity: 0.75;
 }
 
 .titulo_historia {
@@ -218,11 +281,29 @@ body {
     justify-self: center;
     align-self: center;
     margin-top: 80px;
+    color: $colorfuenteblanco;
+    font-size: 180%;
 }
+
+.boxes_historia {
+display: flex;
+justify-self: center;
+align-self: center;
+}
+
+.boxhistoria {
+    width: 300px;
+    border: groove 5px rgb(54, 52, 52);
+    padding: 20px;
+    margin: 1px;
+    background-color: $colornegro;
+}
+
 .texto_historia {
     display: flex;
     justify-self: center;
     align-self: center;
+    color: $colorfuenteblanco;
 }
 
 /* TERMINA BODY HISTORIA */
@@ -246,7 +327,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -5;
-        opacity: 0.25;
+        opacity: 0.75;
     }
 
 .contactenos {
@@ -256,15 +337,17 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 5px;
+    color: $colorfuenteblanco;
 }
 
 
 .titulo_contactenos {
     font-size: x-large;
-    font-style: italic;
     justify-self: center;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 100px;
+    color: $colorfuenteblanco;
+    font-size: 170%;
 }
 
 #caja_contacto {

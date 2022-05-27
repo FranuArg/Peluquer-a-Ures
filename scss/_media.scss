@@ -57,7 +57,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -5;
-        opacity: 0.25;
+        opacity: 0.75;
+        // filter: blur(1px);
+        // -webkit-filter: blur(8px);
     }
 
     .reserva {
@@ -73,7 +75,6 @@
         justify-content: center;
         align-items: center;
         font-size: xx-large;
-        font-style: italic;
         margin-left: 50px;
     }
     .redes {
@@ -119,18 +120,42 @@
 
     /* MEDIA TERMINA BODY INDEX */
 
-    /* MEDIA EMPIEZA CONTACTO */
-    #textarea {
-        width: 18rem;
-        height: 6rem;
-        padding: 0.1rem;
-        margin: 0px 0px 5px 0px;
-    }
+    /* MEDIA EMPIEZA SERVICIOS */
+        .SG .sgLi{width: 100%;}
+    /* MEDIA TERMINA SERVICIOS */
 
-        /* MEDIA TERMINA BODY INDEX */
+    /* MEDIA EMPIEZA GALERÍA */
+    .imagenes_galeria {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .imggaleria {
+    max-width: 50%;
+    max-height: 50%;
+  }
+    /* MEDIA TERMINA GALERÍA */
+
+    /* MEDIA EMPIEZA HISTORIA */
+   .boxes_historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+   }
+    /* MEDIA TERMINA HISTORIA */
 
     /* MEDIA EMPIEZA CONTACTO */
     .titulo_historia {
       margin-top: 80px;
   }
+  #textarea {
+    width: 18rem;
+    height: 6rem;
+    padding: 0.1rem;
+    margin: 0px 0px 5px 0px;
+}
+    /* MEDIA TERMINA CONTACTO */
     }

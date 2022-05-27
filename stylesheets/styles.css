@@ -1,12 +1,12 @@
 @charset "UTF-8";
-/* APLICA A TODOS LAS PAGINAS */
+/* APLICA A TODAS LAS PAGINAS */
 * {
   font-family: 'Times New Roman', Times, serif;
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth; }
 
-/* APLICA A TODOS LAS PAGINAS */
+/* APLICA A TODAS LAS PAGINAS */
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -31,11 +31,7 @@
 
 .boton_logo {
   color: white;
-  font-size: 150%;
-  transition: all 0.2s ease-in; }
-  .boton_logo:hover {
-    transform: scale(1.1);
-    background-image: linear-gradient(to right, #2c2929, black); }
+  font-size: 160%; }
 
 .botones_header {
   color: white;
@@ -88,7 +84,9 @@
 body {
   margin: 0;
   height: 100%;
-  background-color: rgba(231, 229, 229, 0.8); }
+  background-color: #313030;
+  width: 100%;
+  height: 100%; }
 
 /* COMIENZA BODY INDEX */
 .cuerpo {
@@ -107,7 +105,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  opacity: 0.25; }
+  opacity: 0.75;
+  background-color: rgba(231, 229, 229, 0.8); }
 
 .reserva {
   display: grid;
@@ -120,7 +119,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: xx-large;
-  font-style: italic; }
+  color: white; }
 
 .redes {
   display: flex;
@@ -139,7 +138,7 @@ body {
   transition: all 0.5s ease-in; }
 
 .fa-brands {
-  color: #313030; }
+  color: white; }
 
 .caja_redes_facebook {
   margin-left: 40px;
@@ -161,13 +160,15 @@ body {
   justify-content: center;
   align-items: center;
   font-size: xx-large;
-  margin-top: 4.2%; }
+  margin-top: 4.2%;
+  color: white; }
 
 #telefono_index {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: xx-large; }
+  font-size: xx-large;
+  color: white; }
 
 /* TERMINA BODY INDEX */
 /* COMIENZA BODY SERVICIOS */
@@ -192,20 +193,74 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  opacity: 0.25; }
+  opacity: 0.75; }
 
-#servtitulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: x-large;
-  font-style: italic;
-  margin-top: 60px; }
+.tituloservicios {
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+  font-size: 180%; }
 
 #servtabla {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: white; }
+
+li {
+  color: #2c3e50;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white; }
+
+.listatitulo {
+  list-style-type: none;
+  font-size: larger;
+  font-weight: bold;
+  color: white; }
+
+/*SG = style grid*/
+.SG {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.SG .sgLi {
+  min-width: 24%;
+  margin: 2% .35%;
+  display: inline-flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+
+.SG .sgLi:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
+
+.SG .box {
+  width: 100%;
+  height: 100vh;
+  padding: 1% 2%;
+  background: #313030;
+  min-height: 200px;
+  max-height: 220px;
+  box-sizing: border-box; }
+
+.s18 li:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  display: inline-block;
+  background: url(//goo.gl/lcPSVD);
+  background-position: 50%; }
+
+.s19 {
+  list-style: none; }
+
+.s19 li:before {
+  content: '\f0a9';
+  margin-right: 15px; }
 
 /* TERMINA BODY SERVICIOS */
 /* COMIENZA BODY GALERIA */
@@ -230,22 +285,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  opacity: 0.25; }
+  opacity: 0.75; }
 
 .titulo_galeria {
   display: flex;
   justify-self: center;
   align-self: center;
   font-size: x-large;
-  font-style: italic;
-  margin-top: 60px; }
+  margin-top: 60px;
+  color: white;
+  font-size: 180%; }
+
+.imagenes_galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .imggaleria {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 25%;
+  max-height: 25%;
   object-fit: cover;
-  justify-self: center;
-  align-self: center;
   transition: all 0.5s ease-in; }
 
 .imggaleria:hover {
@@ -274,18 +333,33 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  opacity: 0.25; }
+  opacity: 0.75; }
 
 .titulo_historia {
   display: flex;
   justify-self: center;
   align-self: center;
-  margin-top: 80px; }
+  margin-top: 80px;
+  color: white;
+  font-size: 180%; }
+
+.boxes_historia {
+  display: flex;
+  justify-self: center;
+  align-self: center; }
+
+.boxhistoria {
+  width: 300px;
+  border: groove 5px #363434;
+  padding: 20px;
+  margin: 1px;
+  background-color: #313030; }
 
 .texto_historia {
   display: flex;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  color: white; }
 
 /* TERMINA BODY HISTORIA */
 /* COMIENZA BODY CONTACTO */
@@ -305,7 +379,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
-  opacity: 0.25; }
+  opacity: 0.75; }
 
 .contactenos {
   display: grid;
@@ -313,14 +387,16 @@ body {
   grid-template-rows: repeat(1, 5%);
   align-items: center;
   justify-content: center;
-  margin-top: 5px; }
+  margin-top: 5px;
+  color: white; }
 
 .titulo_contactenos {
   font-size: x-large;
-  font-style: italic;
   justify-self: center;
   align-self: center;
-  margin-top: 50px; }
+  margin-top: 100px;
+  color: white;
+  font-size: 170%; }
 
 #caja_contacto {
   display: grid;
@@ -343,6 +419,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
+  width: auto;
   background-color: #313030; }
 
 .footer_texto {
@@ -413,7 +490,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -5;
-    opacity: 0.25; }
+    opacity: 0.75; }
   .reserva {
     display: grid;
     grid-template-columns: 1fr;
@@ -424,7 +501,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: xx-large;
-    font-style: italic;
     margin-left: 50px; }
   .redes {
     display: flex;
@@ -457,13 +533,33 @@ body {
     margin-top: 1px;
     margin-left: 85px; }
   /* MEDIA TERMINA BODY INDEX */
+  /* MEDIA EMPIEZA SERVICIOS */
+  .SG .sgLi {
+    width: 100%; }
+  /* MEDIA TERMINA SERVICIOS */
+  /* MEDIA EMPIEZA GALERÍA */
+  .imagenes_galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .imggaleria {
+    max-width: 50%;
+    max-height: 50%; }
+  /* MEDIA TERMINA GALERÍA */
+  /* MEDIA EMPIEZA HISTORIA */
+  .boxes_historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center; }
+  /* MEDIA TERMINA HISTORIA */
   /* MEDIA EMPIEZA CONTACTO */
+  .titulo_historia {
+    margin-top: 80px; }
   #textarea {
     width: 18rem;
     height: 6rem;
     padding: 0.1rem;
     margin: 0px 0px 5px 0px; }
-  /* MEDIA TERMINA BODY INDEX */
-  /* MEDIA EMPIEZA CONTACTO */
-  .titulo_historia {
-    margin-top: 80px; } }
+  /* MEDIA TERMINA CONTACTO */ }

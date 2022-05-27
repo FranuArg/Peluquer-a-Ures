@@ -26,12 +26,7 @@
 
   .boton_logo {
     color: $colorfuenteblanco;
-    font-size: 150%;
-    transition: all 0.2s ease-in;
-      &:hover {
-        transform: scale(1.1);
-        background-image: linear-gradient(to right, rgb(44, 41, 41), black);
-    }
+    font-size: 160%;
   }
 
   .botones_header {
